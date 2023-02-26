@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login Page</title>
+    <style>
+      
+      .logo {
+        width: 150px;
+        margin-bottom: 30px;
+      }
+      body {
+        margin: 0;
+        font-family: Helvetica;
+        background-color: rgb(255, 252, 252);
+      }
+      .container {
+        width: 320px;
+        text-align: center;
+        padding: 40px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+
+      .abc {
+        display: block;
+        height: 38px;
+        width: 290px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 10px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        color: #8d8d8d;
+        font: 14px Helvetica;
+        height: 40px;
+        line-height: 17px;
+        padding: 0 16px;
+      }
+
+      .signed-in {
+        color: #8d8d8d;
+        font-size: 12px;
+        vertical-align: middle;
+      }
+
+      .terms {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 3px 0 24px;
+        color: #8d8d8d;
+      }
+
+      .terms a,
+      span a {
+        color: #8d8d8d;
+      }
+
+      span {
+        margin-left: 5px;
+      }
+
+      span a{
+        text-decoration: none;
+      }
+
+      .terms a:hover,
+      span a:hover {
+        color: black;
+        text-decoration: underline;
+      }
+
+      .parent-container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn {
+        height: 38px;
+        width: 324px;
+        margin-top: 15px;
+        background-color: black;
+        color: #fff;
+        border-radius: 3px;
+        font-family: Helvetica;
+        font-size: 15px;
+        padding: 0 16px;
+        cursor: pointer;
+      }
+      .btn a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+      }
+      .btn:hover{
+        background-color: rgba(0, 0, 0, 0.847);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-container">
+      <div class="container">
+        <img class="logo" src="adidas_PNG17.png" alt="logo" />
+        <form action="starting_page/starting_page.html">
+          <input class="abc" type="text" name="username" id="username" placeholder="Email address" />
+          <input class="abc" type="password" name="password" id="password" placeholder="Password" />
+          <button class="btn">
+            <a href="starting_page/starting_page.html">Log in</a>
+          </button>
+        </form>
+        <p class="terms">
+          By logging in, you agree to Nike's <a href="">Privacy Policy</a> and
+          <a href="">Terms of Use</a>.
+        </p>
+        <p>
+          Need an account?&nbsp;<span><a href="signup_page/sign_up.html">Register</a></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
